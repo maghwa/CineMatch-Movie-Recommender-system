@@ -1,1 +1,73 @@
+h1 {
+    color: #7fa4b7; 
+    text-align: left;
+    text-shadow: rgba(252, 248, 248, 0);
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+}
+body {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+    background-color: #000000; /* Black background */
+    color: #7fa4b7; /* White text for visibility */
+    text-align: left;
+}
+img {
+    margin: 50px 0 40px 0;
+    width: 250px;
+}
+.logo {
+    display: block;
+    margin-top: 10px;
+    margin-left: 0; /* Align logo to the left */
+    margin-right: 0;
+}
+
+.test {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+    font-size: 50px;
+    color:rgb(55, 72, 201);
+    text-align: left;
+}
+input {
+  width: 300px;
+  margin: 20px 20px;
+  height: 50px;
+  border: none;
+  border-radius: 10px;
+  font-family: Shanti;
+  font-size: 1.3em;
+  background-color: #010302; /* Darker background for inputs */
+  color: #7fa4b7; /* White text */
+  border: solid 5px rgb(0, 0, 0);
+  text-align: center;
+}
+.submit {
+    width: 300px;
+    margin: 20px 20px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.3em;
+    background-color: #010302 ;/* Dark submit button */
+    color: #7fa4b7; /* White text */
+    border: solid 5px rgba(1,10,14,255);
+}
+
+input:focus {
+    outline: none;
+    border: solid 5px #c5d8e0;
+}
+
+#result1 {
+    background-color: rgb(5, 5, 5);
+    border:  none;
+    width:  200px;
+    font: white;
+}
+#result1:hover {
+    background-color: #c5d8e0;
+}
+
 
