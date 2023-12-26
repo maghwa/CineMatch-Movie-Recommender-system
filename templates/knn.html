@@ -1,1 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>kmeans</title>
+    <link rel="stylesheet" href="/static/algorithms.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;600&display=swap" rel="stylesheet">
 
+</head>
+<style>
+    body {
+        font-family: 'Quicksand', sans-serif;
+        font-weight: 600;
+        background-color: #00141f;
+    }
+    .logo {
+        display: block;
+        margin-top: 10px; /* Adjust the top margin as needed */
+        margin-left: 20px;
+        margin-right: auto;
+        width: 200px; /* Adjust the width as needed to make the logo small */
+    }
+</style>
+<body>
+    <img src="/static/logo.png" alt="CineMatch Logo" class="logo">
+
+    <h1 style="font-family: 'Quicksand';font-weight: 600;margin-left: 20px;">  using KNN Approach :</h1>
+     <!-- <img src="/static/film.jpg"> -->
+    <br>
+    
+
+
+    <div style="display: flex;flex-direction: column;justify-content: space-evenly;margin-left: 20px;"margin-left: 20px>
+        <form action="result3" method="post">
+            <label for="select"> 🦸🏻‍♀️ Showing recommendations for user: 🦸🏻‍♂️ </label>
+            <br>
+            <input type="text" name="user_id" id = 'movie'>
+            <br>
+            <input type="submit" style="font-family: 'Quicksand';font-weight: 600;" class="submit" id="search" value="Submit" id="submit">
+            
+            {% for message in get_flashed_messages() %}
+                 <p id="new">{{ message }}</p>
+             {% endfor %}
+        </form>
+    
+        <div style="display: flow-root;margin-left: 20px;">
+            <h5 style="font-family: 'Quicksand';font-weight: 600; font-size: large;margin-left: 20px;"> 🎬 Top 5 Movies recommendations : </h5>
+            <div style="display: flex;flex-direction: row;justify-content: space-evenly;">
+                
+                {% for i in range(5) %}
+                <div style="display: flex;flex-direction: column;">
+                <div id="poster">
+                    <img src={{poster_urls[i]}} alt="">
+                </div>
+                <p id="new">{{ movies[i] }}</p>
+                </div>
+                {% endfor %}
+            </div>
+            
+        </div>
+        
+    </div>
+</body>
+</html>
