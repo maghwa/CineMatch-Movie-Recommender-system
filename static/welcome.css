@@ -1,0 +1,90 @@
+.but{
+  background-color: #ffffff;
+  border-radius: 100px;
+
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  display: inline-block;
+  padding: 7px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.but:hover {
+  box-shadow: rgba(33, 19, 128, 0.35) 0 -25px 18px -14px inset,rgb(255, 255, 255) 0 1px 2px,rgba(88, 4, 4, 0.25) 0 2px 4px,rgba(207, 13, 13, 0.25) 0 4px 8px,rgba(187, 44, 44, 0.25) 0 8px 16px,rgba(201, 30, 30, 0.25) 0 16px 32px;
+  transform: scale(1.05) rotate(-1deg);
+}
+
+h1{
+    color:rgb(65, 5, 230);
+    text-align: center;
+    text-shadow: rgb(252, 248, 248);
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+    font-size: 80px;
+}
+body {
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 300;
+     background: url("bg.jpg"); 
+
+}
+img {
+    margin: 60px 0 30px 0;
+    width: 250px;
+}
+
+.test {
+    font-style:italic;
+    font-size: 50px;
+    color:rgb(55, 72, 201);
+    text-align: center;
+}
+input {
+  width: 300px;
+  margin: 20px 20px;
+  height: 50px;
+  border: none;
+  border-radius: 10px;
+  font-family: Shanti;
+  font-size: 1.3em;
+  background-color : white;
+  color: black;
+  border: solid 5px rgb(0, 0, 0);
+  text-align: center;
+}
+.submit {
+    width: 300px;
+    margin: 20px 20px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    font-family: Shanti;
+    font-size: 1.3em;
+    background-color :rgb(55, 72, 201);
+    color: rgb(252, 248, 248);
+    border: solid 5px rgb(253, 252, 252);
+}
+
+input:focus {
+    outline: none;
+    border: solid 5px rgb(55, 72, 201);
+}
+
+#result1 {
+    background-color: rgb(5, 5, 5);
+    border:  none;
+    width:  200px;
+    font: white;
+}
+#result1:hover {
+    background-color: rgb(55, 72, 201);
+}
+
